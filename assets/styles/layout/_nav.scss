@@ -1,0 +1,38 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  background: url('./../../images/header.png');
+  font-size: $font-size-default;
+  background-size: cover;
+
+  &__logo-image {
+    margin: 2rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    color: $color-grey-light-1;
+  }
+
+  &__item {
+    margin: 3.5rem 0 0 3rem;
+
+  }
+}
+
+.sign-list {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  color: $color-white;
+
+  &__item {
+    margin: 3.5rem 3.5rem 0 0;
+  }
+
+  &__button {
+    margin: -1rem;
+  }
+}

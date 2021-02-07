@@ -1,0 +1,11 @@
+.button {
+  font-size: $font-size-default;
+  padding: 1rem 3.5rem;
+  border-radius: 4em;
+
+  &--white-transparent {
+    background: none;
+    border: 1.5px solid $color-white;
+    color: $color-white;
+  }
+}
