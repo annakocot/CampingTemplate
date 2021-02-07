@@ -67,7 +67,7 @@ p {
 }
 
 h1 {
-  font-family: "Archivo", sans-serif;
+  font-family: "Archivo Black", sans-serif;
   font-size: 8.1rem;
   font-weight: 700;
 }
@@ -103,6 +103,31 @@ h1 {
   border: 1.5px solid #e76f51;
   color: #e76f51;
   background: none;
+}
+
+.card {
+  background-color: #fff;
+  font-size: 1.8rem;
+  color: #3b3735;
+  margin: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+  padding: 5rem;
+  width: 20rem;
+}
+
+.card__image {
+  padding: 2rem;
+}
+
+.card__heading {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 700;
+}
+
+.card__description {
+  font-family: "Roboto", sans-serif;
+  margin-top: 1rem;
 }
 
 .nav {
@@ -179,5 +204,10 @@ h1 {
 .header__button {
   display: flex;
   margin: 0 auto;
+}
+
+.offer {
+  display: flex;
+  margin: 10rem;
 }
 /*# sourceMappingURL=style.css.map */
