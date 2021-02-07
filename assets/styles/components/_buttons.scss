@@ -8,4 +8,23 @@
     border: 1.5px solid $color-white;
     color: $color-white;
   }
+
+  &--orange {
+    background: $color-primary;
+    border: none;
+    color: $color-white;
+  }
+
+  &--grey {
+    border: none;
+    background: $color-grey-light-2;
+    color: $color-grey-dark;
+    text-transform: capitalize;
+  }
+
+  &--orange-transparent {
+    border: 1.5px solid $color-primary;
+    color: $color-primary;
+    background: none;
+  }
 }
