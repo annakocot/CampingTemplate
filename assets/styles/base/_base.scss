@@ -3,8 +3,16 @@ html {
   font-family: $font-secondary;
 }
 
+body {
+  background-color: $color-background;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
+p {
+  font-size: $font-size-default;
+  color: inherit;
+}

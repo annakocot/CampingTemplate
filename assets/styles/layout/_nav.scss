@@ -1,9 +1,9 @@
 .nav {
+  position: fixed;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  background: url('./../../images/header.png');
   font-size: $font-size-default;
-  background-size: cover;
 
   &__logo-image {
     margin: 2rem;
@@ -23,9 +23,9 @@
 }
 
 .sign-list {
+  margin-left:auto;
   display: flex;
   flex-direction: row;
-  margin-left: auto;
   color: $color-white;
 
   &__item {

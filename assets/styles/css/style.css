@@ -52,15 +52,31 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  background-color: #faf4f2;
+}
+
 a {
   text-decoration: none;
   color: inherit;
+}
+
+p {
+  font-size: 1.8rem;
+  color: inherit;
+}
+
+h1 {
+  font-family: "Archivo", sans-serif;
+  font-size: 8.1rem;
+  font-weight: 700;
 }
 
 .button {
   font-size: 1.8rem;
   padding: 1rem 3.5rem;
   border-radius: 4em;
+  outline: none;
 }
 
 .button--white-transparent {
@@ -73,6 +89,7 @@ a {
   background: #e76f51;
   border: none;
   color: #fff;
+  padding: 1rem 5.5rem;
 }
 
 .button--grey {
@@ -89,11 +106,11 @@ a {
 }
 
 .nav {
+  position: fixed;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  background: url("./../../images/header.png");
   font-size: 1.8rem;
-  background-size: cover;
 }
 
 .nav__logo-image {
@@ -112,9 +129,9 @@ a {
 }
 
 .sign-list {
+  margin-left: auto;
   display: flex;
   flex-direction: row;
-  margin-left: auto;
   color: #fff;
 }
 
@@ -124,5 +141,43 @@ a {
 
 .sign-list__button {
   margin: -1rem;
+}
+
+.header {
+  text-align: center;
+  color: #fff;
+}
+
+.header::before {
+  content: '';
+  background: url("./../../images/header.png");
+  background-size: cover;
+  width: 100%;
+  height: 120%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.header__heading {
+  display: flex;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding-top: 20rem;
+  text-transform: capitalize;
+}
+
+.header__description {
+  display: flex;
+  max-width: 50rem;
+  padding: 4rem 0;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+
+.header__button {
+  display: flex;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
