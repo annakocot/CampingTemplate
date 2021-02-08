@@ -29,4 +29,22 @@
     color: $color-primary;
     background: none;
   }
+
+  &__icon {
+    border: none;
+    border-radius: 1.5rem;
+    padding: 1rem;
+
+  &--submit {
+    color: $color-white;
+    background: $color-pink;
+    font-size: $font-size-small;
+  }
+
+  &--back-top {
+    color: $color-primary;
+    background: $color-white;
+    font-size: $font-size-small;
+  }
+}
 }

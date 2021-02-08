@@ -10,24 +10,45 @@
 }
 
 .icon {
-font-family: 'icomoon' !important;
-speak: never;
-font-style: normal;
-font-weight: normal;
-font-variant: normal;
-text-transform: none;
-line-height: 1;
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-/* Better Font Rendering =========== */
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .icon {
+  &--paper-plane:before {
+    content: "\e902";
+  }
+  &--mail:before {
+    content: "\e903";
+  }
+  &--email:before {
+    content: "\e903";
+  }
+  &--letter:before {
+    content: "\e903";
+  }
+  &--envelope:before {
+    content: "\e903";
+  }
+  &--contact:before {
+    content: "\e903";
+  }
   &--heart-outline:before {
     content: "\e900";
   }
   &--heart:before {
     content: "\e901";
+  }
+  &--arrow-up2:before {
+    content: "\ea3a";
   }
 }

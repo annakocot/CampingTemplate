@@ -68,12 +68,40 @@ u-container {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon--paper-plane:before {
+  content: "\e902";
+}
+
+.icon--mail:before {
+  content: "\e903";
+}
+
+.icon--email:before {
+  content: "\e903";
+}
+
+.icon--letter:before {
+  content: "\e903";
+}
+
+.icon--envelope:before {
+  content: "\e903";
+}
+
+.icon--contact:before {
+  content: "\e903";
+}
+
 .icon--heart-outline:before {
   content: "\e900";
 }
 
 .icon--heart:before {
   content: "\e901";
+}
+
+.icon--arrow-up2:before {
+  content: "\ea3a";
 }
 
 html {
@@ -132,6 +160,24 @@ h1 {
   border: 1.5px solid #e76f51;
   color: #e76f51;
   background: none;
+}
+
+.button__icon {
+  border: none;
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+
+.button__icon--submit {
+  color: #fff;
+  background: #f8e1db;
+  font-size: 1.6rem;
+}
+
+.button__icon--back-top {
+  color: #e76f51;
+  background: #fff;
+  font-size: 1.6rem;
 }
 
 .card {
@@ -317,6 +363,7 @@ h1 {
 
 .explore__heading {
   margin: 3rem auto;
+  color: #3b3735;
 }
 
 .explore__heading-image {
@@ -340,5 +387,64 @@ h1 {
 .explore__button {
   display: flex;
   margin: 0 auto;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: row;
+  background: #f8e1db;
+  border-radius: 1rem;
+  width: 107rem;
+  margin: 5rem auto;
+}
+
+.newsletter__textbox {
+  padding: 10rem 8rem;
+  z-index: 2;
+}
+
+.newsletter__heading {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 4rem;
+  text-transform: capitalize;
+  color: #3b3735;
+  margin: 2rem 0;
+}
+
+.newsletter__description {
+  font-size: 1.6rem;
+  margin: 2rem 0;
+}
+
+.newsletter__sign-form {
+  position: relative;
+}
+
+.newsletter__input {
+  width: 80%;
+  padding: 2rem 5rem;
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+  position: relative;
+}
+
+.newsletter__email-icon {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  color: #8d8d8d;
+}
+
+.newsletter__submit-button {
+  position: absolute;
+  top: 1rem;
+  right: -.5rem;
+}
+
+.newsletter__image {
+  margin-right: 4rem;
+  width: 45rem;
 }
 /*# sourceMappingURL=style.css.map */

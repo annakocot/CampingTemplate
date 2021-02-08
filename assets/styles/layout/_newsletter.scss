@@ -1,0 +1,71 @@
+.newsletter {
+  display: flex;
+  flex-direction: row;
+  background: $color-pink;
+  border-radius: 1rem;
+  width: 107rem;
+  margin: 5rem auto;
+
+&__textbox {
+  padding: 10rem 8rem;
+  z-index: 2;
+}
+
+  &__heading {
+    font-family: $font-primary;
+    font-size: $font-size-medium;
+    text-transform: capitalize;
+    color: $color-black;
+    margin: 2rem 0;
+  }
+
+  &__description {
+    font-size: $font-size-small;
+    margin: 2rem 0;
+  }
+
+  &__sign-form {
+    position: relative;
+
+    // &::before {
+    //   content: '';
+    //   background: url('/assets/images/bgshape-subscribe.svg');
+    //   width: 97rem;
+    //   height: 100rem;
+    //   background-size: cover;
+    //   position: absolute;
+    //   left: -48rem;
+    //   bottom: -33rem;
+    //   z-index: -8;
+    //   overflow: hidden;
+    // }
+  }
+
+  &__input {
+    width: 80%;
+    padding: 2rem 5rem;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+    position: relative;
+  }
+
+  &__email-icon {
+    font-size: 2.5rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    color: $color-grey-dark;
+  }
+
+  &__submit-button {
+    position: absolute;
+    top: 1rem;
+    right: -.5rem
+  }
+
+  &__image {
+    margin-right: 4rem;
+    width: 45rem;
+  }
+}

@@ -31,13 +31,14 @@
     flex-direction: column;
     margin: 0 auto;
     font-family: $font-primary;
-    font-size: 4rem;
+    font-size: $font-size-medium;
     max-width: 50rem;
     text-align: center;
   }
 
   &__heading {
     margin: 3rem auto;
+    color: $color-black;
   }
 
   &__heading-image {
