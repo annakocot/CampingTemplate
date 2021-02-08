@@ -1,12 +1,21 @@
 .card {
-  background-color: $color-white;
-  font-size: $font-size-default;
-  color: $color-black;
+  position: relative;
   margin: 1rem;
   text-align: center;
   border-radius: 1rem;
-  padding: 5rem;
   width: 20rem;
+  background-color: $color-white;
+  font-size: $font-size-default;
+  color: $color-black;
+
+  &--offer {
+    padding: 2.5rem 5rem;
+    width: 22rem;
+  }
+
+  &--explore {
+    padding: 2.5rem;
+  }
 
   &__image {
     padding: 2rem;
@@ -15,10 +24,36 @@
   &__heading {
     font-family: $font-primary;
     font-weight: 700;
+    padding: .5rem;
   }
 
   &__description {
     font-family: $font-secondary;
-    margin-top: 1rem;
+    margin: 1rem 0;
+  }
+
+  &__photo {
+    width: 21rem;
+  }
+
+  &__like {
+    position: absolute;
+    top: 3.5rem;
+    right: 2.5rem;
+    z-index: 100;
+    padding: .5rem;
+    background-color: $color-white;
+    border-radius: 1rem;
+    color: $color-primary;
+  }
+
+  &__price {
+    position: absolute;
+    top: 12.5rem;
+    left: 6rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background: $color-white;
+    color: $color-primary;
   }
 }
