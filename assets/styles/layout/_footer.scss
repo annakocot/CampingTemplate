@@ -1,0 +1,81 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background: $color-pink;
+  border-radius: 10rem 10rem 0 0;
+  padding: 8rem 0;
+  margin-top: 12rem;
+
+  &__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  }
+
+  &__button {
+    position: fixed;
+    right: 10rem;
+    bottom: 10rem;
+  }
+
+  &__textbox {
+    width: 36%;
+    margin-right: 6rem;
+  }
+
+  &__heading {
+    margin-bottom: 2rem;
+    font-family: $font-primary;
+    font-size: $font-size-default;
+    color: $color-black;
+  }
+
+  &__description {
+    font-size: $font-size-small;
+    font-family: $font-secondary;
+    color: $color-black;
+    margin-bottom: 2rem;
+  }
+
+  &__badges {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  &__badge {
+    width: 15rem;
+    margin: -4rem 2rem 0 0;
+  }
+
+  &__menu {
+    width: 46%;
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  &__menu-item {
+    & + & {
+      margin-left: 4rem;
+    }
+  }
+
+  &__list {
+    line-height: 1.5;
+  }
+
+  &__list-item {
+    font-size: $font-size-small;
+    font-family: $font-secondary;
+  }
+
+  &__copyright {
+    font-size: $font-size-small;
+    font-family: $font-secondary;
+    color: $color-grey-dark;
+    text-align: center;
+  }
+}

@@ -121,6 +121,7 @@ a {
 p {
   font-size: 1.8rem;
   color: inherit;
+  line-height: 1.5;
 }
 
 h1 {
@@ -395,7 +396,7 @@ h1 {
   background: #f8e1db;
   border-radius: 1rem;
   width: 107rem;
-  margin: 5rem auto;
+  margin: 12rem auto;
 }
 
 .newsletter__textbox {
@@ -418,6 +419,19 @@ h1 {
 
 .newsletter__sign-form {
   position: relative;
+}
+
+.newsletter__sign-form::before {
+  content: '';
+  background: url("/assets/images/bgshape-subscribe.svg");
+  width: 97rem;
+  height: 100rem;
+  background-size: cover;
+  position: absolute;
+  left: -48rem;
+  bottom: -33rem;
+  z-index: -100;
+  overflow: hidden;
 }
 
 .newsletter__input {
@@ -446,5 +460,84 @@ h1 {
 .newsletter__image {
   margin-right: 4rem;
   width: 45rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background: #f8e1db;
+  border-radius: 10rem 10rem 0 0;
+  padding: 8rem 0;
+  margin-top: 12rem;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.footer__button {
+  position: fixed;
+  right: 10rem;
+  bottom: 10rem;
+}
+
+.footer__textbox {
+  width: 36%;
+  margin-right: 6rem;
+}
+
+.footer__heading {
+  margin-bottom: 2rem;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.8rem;
+  color: #3b3735;
+}
+
+.footer__description {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  color: #3b3735;
+  margin-bottom: 2rem;
+}
+
+.footer__badges {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.footer__badge {
+  width: 15rem;
+  margin: -4rem 2rem 0 0;
+}
+
+.footer__menu {
+  width: 46%;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__menu-item + .footer__menu-item {
+  margin-left: 4rem;
+}
+
+.footer__list {
+  line-height: 1.5;
+}
+
+.footer__list-item {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer__copyright {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  color: #8d8d8d;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
