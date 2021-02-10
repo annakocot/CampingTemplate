@@ -6,7 +6,7 @@
 
   &::before {
     content: '';
-    background: url('/assets/images/bgshape-left.svg');
+    background: url('./../../images/bgshape-left.svg');
     position: absolute;
     left: -70rem;
     bottom: 20rem;
@@ -17,7 +17,7 @@
 
   &::after {
     content: '';
-    background: url('/assets/images/bgshape-right.svg');
+    background: url('./../../images/bgshape-right.svg');
     position: absolute;
     right: -50rem;
     top: -50rem;
