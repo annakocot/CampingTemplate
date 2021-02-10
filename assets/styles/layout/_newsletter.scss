@@ -5,6 +5,19 @@
   border-radius: 1rem;
   width: 107rem;
   margin: 12rem auto;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    background: url('/assets/images/bgshape-subscribe.svg');
+    width: 97rem;
+    height: 100rem;
+    background-size: cover;
+    position: absolute;
+    left: -40rem;
+    bottom: -20rem;
+  }
 
 &__textbox {
   padding: 10rem 8rem;
@@ -26,19 +39,6 @@
 
   &__sign-form {
     position: relative;
-
-    &::before {
-      content: '';
-      background: url('/assets/images/bgshape-subscribe.svg');
-      width: 97rem;
-      height: 100rem;
-      background-size: cover;
-      position: absolute;
-      left: -48rem;
-      bottom: -33rem;
-      z-index: -100;
-      overflow: hidden;
-    }
   }
 
   &__input {

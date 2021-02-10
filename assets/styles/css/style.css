@@ -44,12 +44,12 @@ table {
 }
 
 u-container {
-  width: 116.5rem;
+  max-width: 116.5rem;
 }
 
 @font-face {
   font-family: 'icomoon';
-  src: url("/assets/icons/icomoon.ttf") format("truetype"), url("/assets/icons/icomoon.woff") format("woff"), url("/assets/icons/icomoon.svg") format("svg");
+  src: url("./../../icons/icomoon.ttf") format("truetype"), url("./../../icons/icomoon.woff") format("woff"), url("./../../icons/icomoon.svg") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -68,39 +68,39 @@ u-container {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon--paper-plane:before {
+.icon--paper-plane::before {
   content: "\e902";
 }
 
-.icon--mail:before {
+.icon--mail::before {
   content: "\e903";
 }
 
-.icon--email:before {
+.icon--email::before {
   content: "\e903";
 }
 
-.icon--letter:before {
+.icon--letter::before {
   content: "\e903";
 }
 
-.icon--envelope:before {
+.icon--envelope::before {
   content: "\e903";
 }
 
-.icon--contact:before {
+.icon--contact::before {
   content: "\e903";
 }
 
-.icon--heart-outline:before {
+.icon--heart-outline::before {
   content: "\e900";
 }
 
-.icon--heart:before {
+.icon--heart::before {
   content: "\e901";
 }
 
-.icon--arrow-up2:before {
+.icon--arrow-up2::before {
   content: "\ea3a";
 }
 
@@ -111,6 +111,7 @@ html {
 
 body {
   background-color: #faf4f2;
+  overflow-x: hidden;
 }
 
 a {
@@ -137,27 +138,27 @@ h1 {
   outline: none;
 }
 
-.button--white-transparent {
+.button--secondary-transparent {
   background: none;
   border: 1.5px solid #fff;
   color: #fff;
 }
 
-.button--orange {
+.button--primary {
   background: #e76f51;
   border: none;
   color: #fff;
   padding: 1rem 5.5rem;
 }
 
-.button--grey {
+.button--terciary {
   border: none;
   background: #f3f3f3;
   color: #8d8d8d;
   text-transform: capitalize;
 }
 
-.button--orange-transparent {
+.button--primary-transparent {
   border: 1.5px solid #e76f51;
   color: #e76f51;
   background: none;
@@ -195,10 +196,6 @@ h1 {
 .card--offer {
   padding: 2.5rem 5rem;
   width: 22rem;
-}
-
-.card--explore {
-  padding: 2.5rem;
 }
 
 .card__image {
@@ -352,6 +349,10 @@ h1 {
   z-index: -2;
 }
 
+.explore__card {
+  padding: 2.5rem;
+}
+
 .explore__heading {
   display: flex;
   flex-direction: column;
@@ -397,6 +398,19 @@ h1 {
   border-radius: 1rem;
   width: 107rem;
   margin: 12rem auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.newsletter::before {
+  content: '';
+  background: url("/assets/images/bgshape-subscribe.svg");
+  width: 97rem;
+  height: 100rem;
+  background-size: cover;
+  position: absolute;
+  left: -40rem;
+  bottom: -20rem;
 }
 
 .newsletter__textbox {
@@ -419,19 +433,6 @@ h1 {
 
 .newsletter__sign-form {
   position: relative;
-}
-
-.newsletter__sign-form::before {
-  content: '';
-  background: url("/assets/images/bgshape-subscribe.svg");
-  width: 97rem;
-  height: 100rem;
-  background-size: cover;
-  position: absolute;
-  left: -48rem;
-  bottom: -33rem;
-  z-index: -100;
-  overflow: hidden;
 }
 
 .newsletter__input {

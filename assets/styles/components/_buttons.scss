@@ -4,27 +4,27 @@
   border-radius: 4em;
   outline: none;
 
-  &--white-transparent {
+  &--secondary-transparent {
     background: none;
     border: 1.5px solid $color-white;
     color: $color-white;
   }
 
-  &--orange {
+  &--primary {
     background: $color-primary;
     border: none;
     color: $color-white;
     padding: 1rem 5.5rem;
   }
 
-  &--grey {
+  &--terciary {
     border: none;
     background: $color-grey-light-2;
     color: $color-grey-dark;
     text-transform: capitalize;
   }
 
-  &--orange-transparent {
+  &--primary-transparent {
     border: 1.5px solid $color-primary;
     color: $color-primary;
     background: none;

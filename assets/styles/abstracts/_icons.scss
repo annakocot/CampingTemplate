@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'icomoon';
   src:
-    url('/assets/icons/icomoon.ttf') format('truetype'),
-    url('/assets/icons/icomoon.woff') format('woff'),
-    url('/assets/icons/icomoon.svg') format('svg');
+    url('./../../icons/icomoon.ttf') format('truetype'),
+    url('./../../icons/icomoon.woff') format('woff'),
+    url('./../../icons/icomoon.svg') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,31 +24,31 @@
 }
 
 .icon {
-  &--paper-plane:before {
+  &--paper-plane::before {
     content: "\e902";
   }
-  &--mail:before {
+  &--mail::before {
     content: "\e903";
   }
-  &--email:before {
+  &--email::before {
     content: "\e903";
   }
-  &--letter:before {
+  &--letter::before {
     content: "\e903";
   }
-  &--envelope:before {
+  &--envelope::before {
     content: "\e903";
   }
-  &--contact:before {
+  &--contact::before {
     content: "\e903";
   }
-  &--heart-outline:before {
+  &--heart-outline::before {
     content: "\e900";
   }
-  &--heart:before {
+  &--heart::before {
     content: "\e901";
   }
-  &--arrow-up2:before {
+  &--arrow-up2::before {
     content: "\ea3a";
   }
 }
