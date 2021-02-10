@@ -43,8 +43,14 @@ table {
   border-spacing: 0;
 }
 
-u-container {
-  max-width: 116.5rem;
+.u-container {
+  max-width: 192rem;
+  margin: 0 auto;
+}
+
+.u-container--small {
+  max-width: 108rem;
+  margin: 0 auto;
 }
 
 @font-face {
@@ -279,18 +285,10 @@ h1 {
 .header {
   text-align: center;
   color: #fff;
-}
-
-.header::before {
-  content: '';
-  background: url("./../../images/header.png");
+  background: url("./../../images/header.png") top center no-repeat;
   background-size: cover;
-  width: 1260px;
-  height: 760px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  height: 76rem;
+  position: relative;
 }
 
 .header__heading {
@@ -317,7 +315,7 @@ h1 {
 .offer {
   display: flex;
   justify-content: center;
-  margin: 13rem 10rem 10rem 10rem;
+  margin-top: -10rem;
 }
 
 .explore {
@@ -325,28 +323,6 @@ h1 {
   flex-direction: column;
   justify-content: center;
   position: relative;
-}
-
-.explore::before {
-  content: '';
-  background: url("./../../images/bgshape-left.svg");
-  position: absolute;
-  left: -70rem;
-  bottom: 20rem;
-  width: 98rem;
-  height: 98rem;
-  z-index: -2;
-}
-
-.explore::after {
-  content: '';
-  background: url("./../../images/bgshape-right.svg");
-  position: absolute;
-  right: -50rem;
-  top: -50rem;
-  width: 98rem;
-  height: 98rem;
-  z-index: -2;
 }
 
 .explore__card {
@@ -540,5 +516,29 @@ h1 {
   font-family: "Roboto", sans-serif;
   color: #8d8d8d;
   text-align: center;
+}
+
+.main {
+  position: relative;
+}
+
+.main::after {
+  content: '';
+  background: url("./../../images/bgshape-left.svg");
+  position: absolute;
+  left: -70rem;
+  bottom: 20rem;
+  width: 98rem;
+  height: 98rem;
+}
+
+.main::before {
+  content: '';
+  background: url("./../../images/bgshape-right.svg");
+  position: absolute;
+  right: -50rem;
+  top: 50rem;
+  width: 98rem;
+  height: 98rem;
 }
 /*# sourceMappingURL=style.css.map */
