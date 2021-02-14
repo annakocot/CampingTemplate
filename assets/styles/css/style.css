@@ -118,6 +118,13 @@ html {
 body {
   background-color: #faf4f2;
   overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
 }
 
 a {
@@ -142,6 +149,7 @@ h1 {
   padding: 1rem 3.5rem;
   border-radius: 4em;
   outline: none;
+  display: block;
 }
 
 .button--secondary-transparent {
@@ -188,30 +196,28 @@ h1 {
   font-size: 1.6rem;
 }
 
+.cards__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .card {
   position: relative;
+  padding: 2rem;
   margin: 1rem;
   text-align: center;
   border-radius: 1rem;
-  width: 20rem;
+  width: 25rem;
   background-color: #fff;
   font-size: 1.8rem;
   color: #3b3735;
 }
 
-.card--offer {
-  padding: 2.5rem 5rem;
-  width: 22rem;
-}
-
-.card__image {
-  padding: 2rem;
-}
-
 .card__heading {
-  font-family: "Archivo Black", sans-serif;
-  font-weight: 700;
   padding: .5rem;
+  font-family: "Archivo Black", sans-serif;
+  line-height: 1.3;
 }
 
 .card__description {
@@ -221,11 +227,12 @@ h1 {
 
 .card__photo {
   width: 21rem;
+  border-radius: 1.5rem;
 }
 
 .card__like {
   position: absolute;
-  top: 3.5rem;
+  top: 2.5rem;
   right: 2.5rem;
   z-index: 100;
   padding: .5rem;
@@ -235,13 +242,16 @@ h1 {
 }
 
 .card__price {
-  position: absolute;
-  top: 12.5rem;
-  left: 6rem;
+  display: inline-block;
+  margin-top: -6rem;
   padding: 1rem 2rem;
   border-radius: 1rem;
   background: #fff;
   color: #e76f51;
+}
+
+.card__button {
+  display: inline-block;
 }
 
 .nav {
@@ -289,6 +299,7 @@ h1 {
   background-size: cover;
   height: 76rem;
   position: relative;
+  border-radius: 0 0 10rem 10rem;
 }
 
 .header__heading {
@@ -308,7 +319,7 @@ h1 {
 }
 
 .header__button {
-  display: flex;
+  display: inline-block;
   margin: 0 auto;
 }
 
@@ -323,6 +334,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   position: relative;
+  margin: 12rem auto;
 }
 
 .explore__card {
@@ -332,7 +344,7 @@ h1 {
 .explore__heading {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 2rem auto;
   font-family: "Archivo Black", sans-serif;
   font-size: 4rem;
   max-width: 50rem;
@@ -346,7 +358,7 @@ h1 {
 
 .explore__heading-image {
   display: flex;
-  margin: 2rem auto;
+  margin: 3rem auto;
 }
 
 .explore__heading__description {
@@ -372,21 +384,9 @@ h1 {
   flex-direction: row;
   background: #f8e1db;
   border-radius: 1rem;
-  width: 107rem;
-  margin: 12rem auto;
+  margin: auto;
   position: relative;
   overflow: hidden;
-}
-
-.newsletter::before {
-  content: '';
-  background: url("./../../images/bgshape-subscribe.svg");
-  width: 97rem;
-  height: 100rem;
-  background-size: cover;
-  position: absolute;
-  left: -40rem;
-  bottom: -20rem;
 }
 
 .newsletter__textbox {
@@ -409,10 +409,11 @@ h1 {
 
 .newsletter__sign-form {
   position: relative;
+  width: 34.4rem;
 }
 
 .newsletter__input {
-  width: 80%;
+  width: 100%;
   padding: 2rem 5rem;
   border: none;
   border-radius: 1rem;
@@ -431,7 +432,7 @@ h1 {
 .newsletter__submit-button {
   position: absolute;
   top: 1rem;
-  right: -.5rem;
+  right: 1rem;
 }
 
 .newsletter__image {
@@ -454,12 +455,6 @@ h1 {
   display: flex;
   justify-content: center;
   flex-direction: row;
-}
-
-.footer__button {
-  position: fixed;
-  right: 10rem;
-  bottom: 10rem;
 }
 
 .footer__textbox {
@@ -522,23 +517,9 @@ h1 {
   position: relative;
 }
 
-.main::after {
-  content: '';
-  background: url("./../../images/bgshape-left.svg");
-  position: absolute;
-  left: -70rem;
-  bottom: 20rem;
-  width: 98rem;
-  height: 98rem;
-}
-
-.main::before {
-  content: '';
-  background: url("./../../images/bgshape-right.svg");
-  position: absolute;
-  right: -50rem;
-  top: 50rem;
-  width: 98rem;
-  height: 98rem;
+.top-button {
+  position: fixed;
+  right: 10rem;
+  bottom: 10rem;
 }
 /*# sourceMappingURL=style.css.map */

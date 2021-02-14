@@ -5,6 +5,7 @@
   background-size: cover;
   height: 76rem;
   position: relative;
+  border-radius: 0 0 10rem 10rem;
 
   &__heading {
     display: flex;
@@ -23,7 +24,7 @@
   }
 
   &__button {
-    display: flex;
+    display: inline-block;
     margin: 0 auto;
   }
 }
