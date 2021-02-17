@@ -1,0 +1,51 @@
+.button {
+  font-size: $font-size-default;
+  padding: 1rem 3.5rem;
+  border-radius: 4em;
+  outline: none;
+  display: block;
+
+  &--secondary-transparent {
+    background: none;
+    border: 1.5px solid $color-white;
+    color: $color-white;
+  }
+
+  &--primary {
+    background: $color-primary;
+    border: none;
+    color: $color-white;
+    padding: 1rem 5.5rem;
+  }
+
+  &--terciary {
+    border: none;
+    background: $color-grey-light-2;
+    color: $color-grey-dark;
+    text-transform: capitalize;
+  }
+
+  &--primary-transparent {
+    border: 1.5px solid $color-primary;
+    color: $color-primary;
+    background: none;
+  }
+
+  &__icon {
+    border: none;
+    border-radius: 1.5rem;
+    padding: 1rem;
+
+  &--submit {
+    color: $color-white;
+    background: $color-pink;
+    font-size: $font-size-small;
+  }
+
+  &--back-top {
+    color: $color-primary;
+    background: $color-white;
+    font-size: $font-size-small;
+  }
+}
+}

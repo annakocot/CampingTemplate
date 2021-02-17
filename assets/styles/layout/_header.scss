@@ -1,0 +1,30 @@
+.header {
+  text-align: center;
+  color: $color-white;
+  background: url('./../../images/header.png') top center no-repeat;
+  background-size: cover;
+  height: 76rem;
+  position: relative;
+  border-radius: 0 0 10rem 10rem;
+
+  &__heading {
+    display: flex;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding-top: 20rem;
+    text-transform: capitalize;
+  }
+
+  &__description {
+    display: flex;
+    max-width: 50rem;
+    padding: 4rem 0;
+    margin: 0 auto;
+    font-family: $font-secondary;
+  }
+
+  &__button {
+    display: inline-block;
+    margin: 0 auto;
+  }
+}

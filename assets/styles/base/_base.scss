@@ -1,0 +1,27 @@
+html {
+  font-size: 62.5%;
+  font-family: $font-secondary;
+}
+
+body {
+  background-color: $color-background;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  font-size: $font-size-default;
+  color: inherit;
+  line-height: 1.5;
+}

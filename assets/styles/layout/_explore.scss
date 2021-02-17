@@ -1,0 +1,49 @@
+.explore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  margin: 12rem auto;
+
+  &__card {
+    padding: 2.5rem;
+  }
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    font-family: $font-primary;
+    font-size: $font-size-medium;
+    max-width: 50rem;
+    text-align: center;
+  }
+
+  &__heading {
+    margin: 3rem auto;
+    color: $color-black;
+  }
+
+  &__heading-image {
+    display: flex;
+    margin: 3rem auto;
+  }
+
+  &__heading__description {
+    display: flex;
+    margin: 2rem auto;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+
+  &__button {
+    display: flex;
+    margin: 0 auto;
+  }
+}

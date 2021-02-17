@@ -1,0 +1,9 @@
+.u-container {
+  max-width: 192rem;
+  margin: 0 auto;
+
+  &--small {
+    max-width: 108rem;
+    margin: 0 auto;
+  }
+}

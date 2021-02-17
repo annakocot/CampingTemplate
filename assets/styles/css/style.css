@@ -1,0 +1,525 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.u-container {
+  max-width: 192rem;
+  margin: 0 auto;
+}
+
+.u-container--small {
+  max-width: 108rem;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("./../../icons/icomoon.ttf") format("truetype"), url("./../../icons/icomoon.woff") format("woff"), url("./../../icons/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.icon {
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon--paper-plane::before {
+  content: "\e902";
+}
+
+.icon--mail::before {
+  content: "\e903";
+}
+
+.icon--email::before {
+  content: "\e903";
+}
+
+.icon--letter::before {
+  content: "\e903";
+}
+
+.icon--envelope::before {
+  content: "\e903";
+}
+
+.icon--contact::before {
+  content: "\e903";
+}
+
+.icon--heart-outline::before {
+  content: "\e900";
+}
+
+.icon--heart::before {
+  content: "\e901";
+}
+
+.icon--arrow-up2::before {
+  content: "\ea3a";
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #faf4f2;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  font-size: 1.8rem;
+  color: inherit;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 8.1rem;
+  font-weight: 700;
+}
+
+.button {
+  font-size: 1.8rem;
+  padding: 1rem 3.5rem;
+  border-radius: 4em;
+  outline: none;
+  display: block;
+}
+
+.button--secondary-transparent {
+  background: none;
+  border: 1.5px solid #fff;
+  color: #fff;
+}
+
+.button--primary {
+  background: #e76f51;
+  border: none;
+  color: #fff;
+  padding: 1rem 5.5rem;
+}
+
+.button--terciary {
+  border: none;
+  background: #f3f3f3;
+  color: #8d8d8d;
+  text-transform: capitalize;
+}
+
+.button--primary-transparent {
+  border: 1.5px solid #e76f51;
+  color: #e76f51;
+  background: none;
+}
+
+.button__icon {
+  border: none;
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+
+.button__icon--submit {
+  color: #fff;
+  background: #f8e1db;
+  font-size: 1.6rem;
+}
+
+.button__icon--back-top {
+  color: #e76f51;
+  background: #fff;
+  font-size: 1.6rem;
+}
+
+.cards__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  padding: 2rem;
+  margin: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+  width: 25rem;
+  background-color: #fff;
+  font-size: 1.8rem;
+  color: #3b3735;
+}
+
+.card__heading {
+  padding: .5rem;
+  font-family: "Archivo Black", sans-serif;
+  line-height: 1.3;
+}
+
+.card__description {
+  font-family: "Roboto", sans-serif;
+  margin: 1rem 0;
+}
+
+.card__photo {
+  width: 21rem;
+  border-radius: 1.5rem;
+}
+
+.card__like {
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  z-index: 100;
+  padding: .5rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  color: #e76f51;
+}
+
+.card__price {
+  display: inline-block;
+  margin-top: -6rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background: #fff;
+  color: #e76f51;
+}
+
+.card__button {
+  display: inline-block;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.8rem;
+}
+
+.nav__logo-image {
+  margin: 2rem;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  margin-left: 0;
+  color: #d2d2d2;
+}
+
+.nav__item {
+  margin: 3.5rem 0 0 3rem;
+}
+
+.sign-list {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+}
+
+.sign-list__item {
+  margin: 3.5rem 3.5rem 0 0;
+}
+
+.sign-list__button {
+  margin: -1rem;
+}
+
+.header {
+  text-align: center;
+  color: #fff;
+  background: url("./../../images/header.png") top center no-repeat;
+  background-size: cover;
+  height: 76rem;
+  position: relative;
+  border-radius: 0 0 10rem 10rem;
+}
+
+.header__heading {
+  display: flex;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding-top: 20rem;
+  text-transform: capitalize;
+}
+
+.header__description {
+  display: flex;
+  max-width: 50rem;
+  padding: 4rem 0;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+
+.header__button {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.offer {
+  display: flex;
+  justify-content: center;
+  margin-top: -10rem;
+}
+
+.explore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  margin: 12rem auto;
+}
+
+.explore__card {
+  padding: 2.5rem;
+}
+
+.explore__heading {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 4rem;
+  max-width: 50rem;
+  text-align: center;
+}
+
+.explore__heading {
+  margin: 3rem auto;
+  color: #3b3735;
+}
+
+.explore__heading-image {
+  display: flex;
+  margin: 3rem auto;
+}
+
+.explore__heading__description {
+  display: flex;
+  margin: 2rem auto;
+}
+
+.explore__cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.explore__button {
+  display: flex;
+  margin: 0 auto;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: row;
+  background: #f8e1db;
+  border-radius: 1rem;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.newsletter__textbox {
+  padding: 10rem 8rem;
+  z-index: 2;
+}
+
+.newsletter__heading {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 4rem;
+  text-transform: capitalize;
+  color: #3b3735;
+  margin: 2rem 0;
+}
+
+.newsletter__description {
+  font-size: 1.6rem;
+  margin: 2rem 0;
+}
+
+.newsletter__sign-form {
+  position: relative;
+  width: 34.4rem;
+}
+
+.newsletter__input {
+  width: 100%;
+  padding: 2rem 5rem;
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+  position: relative;
+}
+
+.newsletter__email-icon {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  color: #8d8d8d;
+}
+
+.newsletter__submit-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.newsletter__image {
+  margin-right: 4rem;
+  width: 45rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background: #f8e1db;
+  border-radius: 10rem 10rem 0 0;
+  padding: 8rem 0;
+  margin-top: 12rem;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.footer__textbox {
+  width: 36%;
+  margin-right: 6rem;
+}
+
+.footer__heading {
+  margin-bottom: 2rem;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.8rem;
+  color: #3b3735;
+}
+
+.footer__description {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  color: #3b3735;
+  margin-bottom: 2rem;
+}
+
+.footer__badges {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.footer__badge {
+  width: 15rem;
+  margin: -4rem 2rem 0 0;
+}
+
+.footer__menu {
+  width: 46%;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__menu-item + .footer__menu-item {
+  margin-left: 4rem;
+}
+
+.footer__list {
+  line-height: 1.5;
+}
+
+.footer__list-item {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer__copyright {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  color: #8d8d8d;
+  text-align: center;
+}
+
+.main {
+  position: relative;
+}
+
+.top-button {
+  position: fixed;
+  right: 10rem;
+  bottom: 10rem;
+}
+/*# sourceMappingURL=style.css.map */
