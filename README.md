@@ -1,10 +1,10 @@
 # Camping Template
 
 ## Table of contents
-* [General info] (#general-info)
-* [Technologies] (#technologies)
-* [Sources] (#sources)
-* [Setup] (#setup)
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Sources](#sources)
+* [Setup](#setup)
 
 ## General info
 This project is a simple website template.
