@@ -1,5 +1,4 @@
 .nav {
-  position: fixed;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -23,7 +22,7 @@
 }
 
 .sign-list {
-  margin-left:auto;
+  margin-left: auto;
   display: flex;
   flex-direction: row;
   color: $color-white;
@@ -34,5 +33,27 @@
 
   &__button {
     margin: -1rem;
+  }
+}
+
+.fixed-nav {
+  .nav {
+    background-color: $color-background;
+    border-radius: 0 0 5rem 5rem ;
+    position: fixed;
+    z-index: 1;
+
+    &__list {
+      color: $color-black;
+    }
+  }
+
+  .sign-list {
+    color: $color-black;
+
+    &__button {
+      color: $color-black;
+      border: .15rem solid $color-black;
+    }
   }
 }

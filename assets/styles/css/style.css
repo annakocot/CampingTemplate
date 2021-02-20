@@ -265,7 +265,6 @@ h1 {
 }
 
 .nav {
-  position: fixed;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -300,6 +299,26 @@ h1 {
 
 .sign-list__button {
   margin: -1rem;
+}
+
+.fixed-nav .nav {
+  background-color: #faf4f2;
+  border-radius: 0 0 5rem 5rem;
+  position: fixed;
+  z-index: 1;
+}
+
+.fixed-nav .nav__list {
+  color: #3b3735;
+}
+
+.fixed-nav .sign-list {
+  color: #3b3735;
+}
+
+.fixed-nav .sign-list__button {
+  color: #3b3735;
+  border: 0.15rem solid #3b3735;
 }
 
 .header {

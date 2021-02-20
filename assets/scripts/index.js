@@ -28,3 +28,19 @@ scrollToTopButton.onclick = function(e) {
   e.preventDefault();
   scrollUp();
 }
+
+
+const nav = document.getElementById('nav');
+const navTop = nav.offsetTop;
+
+const stickyNav = () => {
+
+
+  if (window.scrollY > navTop) {
+    document.body.classList.add('fixed-nav');
+  } else {
+    document.body.classList.remove('fixed-nav');
+  }
+}
+
+window.addEventListener('scroll', stickyNav);
