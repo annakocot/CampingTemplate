@@ -46,6 +46,16 @@
     color: $color-primary;
     background: $color-white;
     font-size: $font-size-small;
+
+    &.show {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    &.hide {
+      visibility: hidden;
+      opacity: 0;
+    }
   }
 }
 }

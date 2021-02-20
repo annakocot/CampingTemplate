@@ -1,29 +1,32 @@
 .main {
   position: relative;
 
-  // &::before {
-  //   content: '';
-  //   background: url('./../../images/bgshape-right.svg');
-  //   position: absolute;
-  //   right: -50rem;
-  //   top: 50rem;
-  //   width: 98rem;
-  //   height: 105rem;
-  // }
+  &::before {
+    content: '';
+    background: url('./../../images/bgshape-right.svg');
+    position: absolute;
+    right: -50rem;
+    top: 50rem;
+    width: 98rem;
+    height: 105rem;
+  }
 
-  // &::after {
-  //   content: '';
-  //   background: url('./../../images/bgshape-left.svg');
-  //   position: absolute;
-  //   left: -70rem;
-  //   bottom: 20rem;
-  //   width: 98rem;
-  //   height: 98rem;
-  // }
+  &::after {
+    content: '';
+    background: url('./../../images/bgshape-left.svg');
+    position: absolute;
+    left: -70rem;
+    bottom: 20rem;
+    width: 98rem;
+    height: 98rem;
+    z-index: -1;
+  }
 }
 
-.top-button {
+#back-top {
   position: fixed;
   right: 10rem;
   bottom: 10rem;
+  padding: 1rem;
+  border-radius: 1.5rem;
 }
