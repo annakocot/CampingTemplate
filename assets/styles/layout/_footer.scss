@@ -10,7 +10,7 @@
 
   &__wrapper {
     display: flex;
-    margin-left: 9rem;
+    margin-left: 6rem;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
@@ -25,7 +25,7 @@
       margin-left: 13rem;
     }
 
-    @include media-breakpoint-up(fhdDesktop) {
+    @include media-breakpoint-up(hdDesktop) {
       max-width: 120rem;
       margin: 0 auto;
     }
@@ -33,7 +33,7 @@
 
 
   &__textbox {
-    width: 33rem;
+    width: 35rem;
     margin-right: 6rem;
 
     @include media-breakpoint-up(phablet) {
@@ -54,10 +54,12 @@
   }
 
   &__heading {
+    max-width: 30rem;
     margin-bottom: 2rem;
     font-family: $font-primary;
     font-size: $font-size-default;
     color: $color-black;
+    line-height: 1.5;
   }
 
   &__description {
@@ -65,13 +67,14 @@
     font-family: $font-secondary;
     color: $color-black;
     margin-bottom: 2rem;
+    line-height: 1.8;
   }
 
   &__badges {
-    order: 2;
+     margin-top: 7rem;
 
-    @include media-breakpoint-up(desktop) {
-      order: 3;
+    @include media-breakpoint-up(laptop) {
+      margin-top: 3rem;
     }
   }
 
@@ -88,23 +91,22 @@
 
   &__menu {
     display: flex;
-    flex-direction: column;
-    order: 3;
-
-    @include media-breakpoint-up(laptop) {
-      flex-direction: row;
-      order: 2;
-    }
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   &__menu-item {
-    &+& {
-      margin-top: 2rem;
-      margin-left: 0;
+    max-width: 16rem;
+    margin-top: 4rem;
+    margin-right: 3rem;
 
+    @include media-breakpoint-up(laptop) {
+      margin-top: 0;
+    }
+
+    &+& {
       @include media-breakpoint-up(laptop) {
-        margin-top: 0;
-        margin-left: 4rem;
+        margin-left: 2rem;
       }
 
       @include media-breakpoint-up(desktop) {
@@ -121,6 +123,7 @@
   &__list-item {
     font-size: $font-size-small;
     font-family: $font-secondary;
+    line-height: 1.8;
 
     &:hover {
       color: $color-primary;
@@ -134,6 +137,6 @@
     font-family: $font-secondary;
     color: $color-grey-dark;
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 1rem;
   }
 }
