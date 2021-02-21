@@ -1,60 +1,128 @@
 .newsletter {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background: $color-pink;
-  border-radius: 1rem;
-  margin: auto;
+  border-radius: 4rem;
+  margin: 0 auto;
   position: relative;
   overflow: hidden;
 
-  // &::before {
-  //   content: '';
-  //   background: url('./../../images/bgshape-subscribe.svg');
-  //   width: 97rem;
-  //   height: 100rem;
-  //   background-size: cover;
-  //   position: absolute;
-  //   left: -40rem;
-  //   bottom: -20rem;
-  // }
+  @include media-breakpoint-up(landscapeTablet) {
+    flex-direction: row;
+  }
 
-&__textbox {
-  padding: 10rem 8rem;
-  z-index: 2;
-}
+  &::before {
+    content: '';
+    background: url('./../../images/bgshape-subscribe.svg');
+    position: absolute;
+    width: 65rem;
+    height: 69rem;
+    background-size: contain;
+    left: -40rem;
+    bottom: -20rem;
+
+     @include media-breakpoint-up(landscapePhone) {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  @include media-breakpoint-up(landscapeTablet) {
+    flex-direction: row;
+  }
+
+    @include media-breakpoint-up(landscapePhone) {
+      left: -23rem;
+      bottom: -17rem;
+    }
+
+    @include media-breakpoint-up(portraitTablet) {
+      width: 75rem;
+      height: 79rem;
+      left: -23rem;
+      bottom: -22rem;
+    }
+
+    @include media-breakpoint-up(laptop) {
+      width: 96rem;
+      height: 100rem;
+      left: -36rem;
+      bottom: -30rem;
+    }
+  }
+
+  &__textbox {
+    padding: 2rem;
+    z-index: 2;
+    order: 2;
+
+    @include media-breakpoint-up(landscapeTablet) {
+      order: 1;
+      max-width: 40rem;
+      padding-top: 10rem;
+    }
+
+    @include media-breakpoint-up(laptop) {
+      max-width: 65rem;
+      margin: 3rem;
+    }
+  }
 
   &__heading {
     font-family: $font-primary;
     font-size: $font-size-medium;
     text-transform: capitalize;
     color: $color-black;
-    margin: 2rem 0;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 22rem;
+
+    @include media-breakpoint-up(landscapeTablet) {
+      text-align: left;
+      max-width: 50rem;
+    }
   }
 
   &__description {
     font-size: $font-size-small;
-    margin: 2rem 0;
+    text-align: center;
+      max-width: 32rem;
+      margin: 4rem auto;
+
+    @include media-breakpoint-up(landscapeTablet) {
+      text-align: left;
+      max-width: 50rem;
+    }
   }
 
   &__sign-form {
     position: relative;
-    width: 34.4rem;
+    width: 28rem;
+    margin: 3rem auto;
+
+    @include media-breakpoint-up(landscapePhone) {
+      width: 42rem;
+    }
+
+    @include media-breakpoint-up(landscapeTablet) {
+     margin: 3rem 0;
+    }
   }
 
   &__input {
     width: 100%;
-    padding: 2rem 5rem;
+    padding: 2.5rem 5.5rem;
     border: none;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     outline: none;
     position: relative;
+    margin: 0 auto;
   }
 
   &__email-icon {
     font-size: 2.5rem;
     position: absolute;
-    top: 1.5rem;
-    left: 1.5rem;
+    top: 2rem;
+    left: 2rem;
     color: $color-grey-dark;
   }
 
@@ -65,7 +133,19 @@
   }
 
   &__image {
-    margin-right: 4rem;
     width: 45rem;
+    margin: 6rem auto;
+    order: 1;
+    z-index: 2;
+
+    @include media-breakpoint-up(landscapeTablet) {
+      width: 30rem;
+      margin: 6rem 2rem;
+    }
+
+    @include media-breakpoint-up(laptop) {
+      width: 45rem;
+      margin-right: 4rem;
+    }
   }
 }
