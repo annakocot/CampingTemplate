@@ -24,7 +24,13 @@
     @include media-breakpoint-up(desktop) {
       margin-left: 13rem;
     }
+
+    @include media-breakpoint-up(fhdDesktop) {
+      max-width: 120rem;
+      margin: 0 auto;
+    }
   }
+
 
   &__textbox {
     width: 33rem;
@@ -36,6 +42,14 @@
 
     @include media-breakpoint-up(laptop) {
       width: 30rem;
+    }
+
+    @include media-breakpoint-up(desktop) {
+      width: 38rem;
+    }
+
+    @include media-breakpoint-up(hdDesktop) {
+      width: 50rem;
     }
   }
 
@@ -92,6 +106,7 @@
         margin-top: 0;
         margin-left: 4rem;
       }
+
       @include media-breakpoint-up(desktop) {
         margin-left: 4rem;
         margin-top: 0;

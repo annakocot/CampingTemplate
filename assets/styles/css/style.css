@@ -534,6 +534,13 @@ h1 {
   }
 }
 
+@media (min-width: 1920px) {
+  .footer__wrapper {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+}
+
 .footer__textbox {
   width: 33rem;
   margin-right: 6rem;
@@ -548,6 +555,18 @@ h1 {
 @media (min-width: 1024px) {
   .footer__textbox {
     width: 30rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .footer__textbox {
+    width: 38rem;
+  }
+}
+
+@media (min-width: 1366px) {
+  .footer__textbox {
+    width: 50rem;
   }
 }
 
