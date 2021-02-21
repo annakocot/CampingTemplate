@@ -5,10 +5,20 @@
   outline: none;
   display: block;
 
+  &:hover {
+    transform: scale(1.1);
+    transition: all .3s;
+  }
+
   &--secondary-transparent {
     background: none;
     border: 1.5px solid $color-white;
     color: $color-white;
+
+    &:hover {
+      color: $color-primary;
+      border: .15rem solid $color-primary;
+    }
   }
 
   &--primary {

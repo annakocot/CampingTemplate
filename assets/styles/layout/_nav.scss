@@ -21,6 +21,7 @@
     &:hover {
       color: $color-primary;
       transform: scale(1.1);
+      transition: all .3s;
     }
   }
 }
@@ -37,17 +38,12 @@
     &:hover {
       color: $color-primary;
       transform: scale(1.1);
+      transition: all .3s;
     }
   }
 
   &__button {
     margin: -1rem;
-
-    &:hover {
-      color: $color-primary;
-      border: .15rem solid $color-primary;
-      transform: scale(1.1);
-    }
   }
 }
 
@@ -69,6 +65,11 @@
     &__button {
       color: $color-black;
       border: .15rem solid $color-black;
+
+      &:hover {
+        color: $color-primary;
+        border: .15rem solid $color-primary;
+      }
     }
   }
 }

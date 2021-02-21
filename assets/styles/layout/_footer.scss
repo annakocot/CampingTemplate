@@ -9,14 +9,34 @@
   margin-top: 12rem;
 
   &__wrapper {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+    display: flex;
+    margin-left: 9rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include media-breakpoint-up(laptop) {
+      flex-direction: row;
+      justify-content: flex-start;
+      max-height: 50rem;
+    }
+
+    @include media-breakpoint-up(desktop) {
+      margin-left: 13rem;
+    }
   }
 
   &__textbox {
-    width: 36%;
+    width: 33rem;
     margin-right: 6rem;
+
+    @include media-breakpoint-up(phablet) {
+      width: 53rem;
+    }
+
+    @include media-breakpoint-up(laptop) {
+      width: 30rem;
+    }
   }
 
   &__heading {
@@ -34,6 +54,14 @@
   }
 
   &__badges {
+    order: 2;
+
+    @include media-breakpoint-up(desktop) {
+      order: 3;
+    }
+  }
+
+  &__badges-list {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -45,15 +73,29 @@
   }
 
   &__menu {
-    width: 46%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    order: 3;
 
+    @include media-breakpoint-up(laptop) {
+      flex-direction: row;
+      order: 2;
+    }
   }
 
   &__menu-item {
-    & + & {
-      margin-left: 4rem;
+    &+& {
+      margin-top: 2rem;
+      margin-left: 0;
+
+      @include media-breakpoint-up(laptop) {
+        margin-top: 0;
+        margin-left: 4rem;
+      }
+      @include media-breakpoint-up(desktop) {
+        margin-left: 4rem;
+        margin-top: 0;
+      }
     }
   }
 
@@ -64,6 +106,12 @@
   &__list-item {
     font-size: $font-size-small;
     font-family: $font-secondary;
+
+    &:hover {
+      color: $color-primary;
+      transform: scale(1.1);
+      transition: all .2s;
+    }
   }
 
   &__copyright {
@@ -71,5 +119,6 @@
     font-family: $font-secondary;
     color: $color-grey-dark;
     text-align: center;
+    margin-top: 5rem;
   }
 }
