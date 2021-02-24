@@ -74,6 +74,10 @@ table {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon--menu:before {
+  content: "\e904";
+}
+
 .icon--paper-plane::before {
   content: "\e902";
 }
@@ -194,16 +198,38 @@ h1 {
   padding: 1rem;
 }
 
+.button__icon--hamburger {
+  color: #e76f51;
+  background: #fff;
+  border-radius: 2rem;
+  font-size: 2.2rem;
+}
+
+.button__icon--hamburger:hover {
+  color: #fff;
+  background: #e76f51;
+}
+
 .button__icon--submit {
   color: #fff;
-  background: #f8e1db;
+  background: #e76f51;
   font-size: 1.6rem;
+}
+
+.button__icon--submit:hover {
+  color: #e76f51;
+  background: #fff;
 }
 
 .button__icon--back-top {
   color: #e76f51;
   background: #fff;
   font-size: 1.6rem;
+}
+
+.button__icon--back-top:hover {
+  color: #fff;
+  background: #e76f51;
 }
 
 .button__icon--back-top.show {
@@ -220,6 +246,8 @@ h1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  max-height: 144rem;
 }
 
 .card {
@@ -278,6 +306,7 @@ h1 {
   width: 100%;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   font-size: 1.8rem;
 }
 
@@ -285,11 +314,41 @@ h1 {
   margin: 2rem;
 }
 
+.nav__hamburger {
+  margin: 2rem;
+  margin-left: auto;
+}
+
+@media (min-width: 1024px) {
+  .nav__hamburger {
+    display: none;
+  }
+}
+
+.nav__hamburger-icon {
+  display: block;
+  margin: .5rem;
+}
+
 .nav__list {
+  display: none;
+  flex-direction: column;
+  border-radius: 0 0 5rem 5rem;
+  padding: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    color: #d2d2d2;
+  }
+}
+
+.nav__list.show {
   display: flex;
-  flex-direction: row;
-  margin-left: 0;
-  color: #d2d2d2;
+  width: 100%;
 }
 
 .nav__item {
@@ -303,10 +362,21 @@ h1 {
 }
 
 .sign-list {
-  margin-left: auto;
-  display: flex;
-  flex-direction: row;
-  color: #fff;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .sign-list {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sign-list {
+    margin-left: auto;
+  }
 }
 
 .sign-list__item {
@@ -324,10 +394,15 @@ h1 {
 }
 
 .fixed-nav .nav {
-  background-color: #faf4f2;
   border-radius: 0 0 5rem 5rem;
   position: fixed;
   z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .fixed-nav .nav {
+    background: #faf4f2;
+  }
 }
 
 .fixed-nav .nav__list {
@@ -784,16 +859,6 @@ h1 {
 
 .main {
   position: relative;
-}
-
-.main::before {
-  content: '';
-  background: url("./../../images/bgshape-right.svg");
-  position: absolute;
-  right: -50rem;
-  top: 50rem;
-  width: 98rem;
-  height: 105rem;
 }
 
 .main::after {

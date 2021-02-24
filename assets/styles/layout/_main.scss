@@ -1,15 +1,15 @@
 .main {
   position: relative;
 
-  &::before {
-    content: '';
-    background: url('./../../images/bgshape-right.svg');
-    position: absolute;
-    right: -50rem;
-    top: 50rem;
-    width: 98rem;
-    height: 105rem;
-  }
+  // &::before {
+  //   content: '';
+  //   background: url('./../../images/bgshape-right.svg');
+  //   position: absolute;
+  //   right: -50rem;
+  //   top: 50rem;
+  //   width: 98rem;
+  //   height: 105rem;
+  // }
 
   &::after {
     content: '';

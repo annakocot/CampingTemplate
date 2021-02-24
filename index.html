@@ -16,8 +16,11 @@
   <div class="u-container">
     <header class="header">
       <nav id="nav" class="header__nav nav">
-        <a href="" class="nav__logo"><img class="nav__logo-image" src="./assets/images/logo.svg" alt="Logo"></a>
-        <ul class="nav__list">
+        <a href="#" class="nav__logo"><img class="nav__logo-image" src="./assets/images/logo.svg" alt="Logo"></a>
+        <a href="#" class="nav__hamburger button button__icon button__icon--hamburger" id="hamburger">
+          <span class="nav__hamburger-icon icon icon--menu"></span>
+        </a>
+        <ul class="nav__list" id="nav-list">
           <li class="nav__item"><a class="nav__link" href="#">World</a></li>
           <li class="nav__item"><a class="nav__link" href="#">Style</a></li>
           <li class="nav__item"><a class="nav__link" href="#">Science</a></li>
@@ -217,8 +220,9 @@
           <form action="" class="newsletter__sign-form">
             <input class="newsletter__input" type="email" id="email" placeholder="Email Adress">
             <span class="newsletter__email-icon icon icon--email"></span>
-            <input type="submit" class="newsletter__submit-button button button__icon button__icon--submit">
+            <a class="newsletter__submit-button button button__icon button__icon--submit">
               <span class="newsletter__submit-icon icon icon--paper-plane"></span>
+            </a>
           </form>
         </div>
         <img class="newsletter__image" src="./assets/images/tent.svg" alt="Camping">

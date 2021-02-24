@@ -46,26 +46,48 @@
     border-radius: 1.5rem;
     padding: 1rem;
 
-  &--submit {
-    color: $color-white;
-    background: $color-pink;
-    font-size: $font-size-small;
-  }
+    &--hamburger {
+      color: $color-primary;
+      background: $color-white;
+      border-radius: 2rem;
+      font-size: 2.2rem;
 
-  &--back-top {
-    color: $color-primary;
-    background: $color-white;
-    font-size: $font-size-small;
-
-    &.show {
-      visibility: visible;
-      opacity: 1;
+      &:hover {
+        color: $color-white;
+        background: $color-primary;
+      }
     }
 
-    &.hide {
-      visibility: hidden;
-      opacity: 0;
+    &--submit {
+      color: $color-white;
+      background: $color-primary;
+      font-size: $font-size-small;
+
+      &:hover {
+        color: $color-primary;
+        background: $color-white;
+      }
+    }
+
+    &--back-top {
+      color: $color-primary;
+      background: $color-white;
+      font-size: $font-size-small;
+
+      &:hover {
+        color: $color-white;
+        background: $color-primary;
+      }
+
+      &.show {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      &.hide {
+        visibility: hidden;
+        opacity: 0;
+      }
     }
   }
-}
 }

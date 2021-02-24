@@ -3,6 +3,12 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    max-height: 144rem;
+
+    // @include media-breakpoint-up(laptop) {
+    //   flex-direction: row;
+    // }
   }
 }
 
