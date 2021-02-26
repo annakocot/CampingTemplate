@@ -34,11 +34,7 @@
       flex-direction: row;
       margin-left: 0;
       color: $color-grey-light-1;
-    }
-
-    &.show {
-      display: flex;
-      width: 100%;
+      padding: 0;
     }
   }
 
@@ -81,9 +77,8 @@
   }
 }
 
-.fixed-nav {
+.u-fixed-nav {
   .nav {
-
     border-radius: 0 0 5rem 5rem;
     position: fixed;
     z-index: 1;

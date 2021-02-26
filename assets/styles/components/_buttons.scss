@@ -79,15 +79,15 @@
         background: $color-primary;
       }
 
-      &.show {
-        visibility: visible;
-        opacity: 1;
-      }
 
-      &.hide {
-        visibility: hidden;
-        opacity: 0;
-      }
     }
   }
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
 }

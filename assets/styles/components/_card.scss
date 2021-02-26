@@ -23,9 +23,16 @@
   font-size: $font-size-default;
   color: $color-black;
 
-  &__image {
+  &:nth-child(n+5) {
+    display: none;
 
+
+    @include media-breakpoint-up(laptop) {
+      display: flex;
+    }
   }
+
+  &__image {}
 
   &__heading {
     padding: .5rem;

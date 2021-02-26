@@ -4,10 +4,10 @@ const showButton = () => {
   let y = window.scrollY;
 
   if (y > 0) {
-    scrollToTopButton.className = 'button__icon--back-top show';
+    scrollToTopButton.className = 'show';
   }
   else {
-    scrollToTopButton.className = 'button__icon--back-top hide';
+    scrollToTopButton.className = 'hide';
   }
 };
 
@@ -24,22 +24,20 @@ const scrollUp = () => {
   }
 };
 
-scrollToTopButton.onclick = function(e) {
+scrollToTopButton.addEventListener('click', (e) => {
   e.preventDefault();
   scrollUp();
-}
+});
 
 
 const nav = document.getElementById('nav');
 const navTop = nav.offsetTop;
 
 const stickyNav = () => {
-
-
   if (window.scrollY > navTop) {
-    document.body.classList.add('fixed-nav');
+    document.body.classList.add('u-fixed-nav');
   } else {
-    document.body.classList.remove('fixed-nav');
+    document.body.classList.remove('u-fixed-nav');
   }
 }
 

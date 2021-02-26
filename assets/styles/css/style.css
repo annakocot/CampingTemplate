@@ -232,14 +232,12 @@ h1 {
   background: #e76f51;
 }
 
-.button__icon--back-top.show {
-  visibility: visible;
-  opacity: 1;
+.show {
+  display: block;
 }
 
-.button__icon--back-top.hide {
-  visibility: hidden;
-  opacity: 0;
+.hide {
+  display: none;
 }
 
 .cards__list {
@@ -260,6 +258,16 @@ h1 {
   background-color: #fff;
   font-size: 1.8rem;
   color: #3b3735;
+}
+
+.card:nth-child(n+5) {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .card:nth-child(n+5) {
+    display: flex;
+  }
 }
 
 .card__heading {
@@ -343,12 +351,8 @@ h1 {
     flex-direction: row;
     margin-left: 0;
     color: #d2d2d2;
+    padding: 0;
   }
-}
-
-.nav__list.show {
-  display: flex;
-  width: 100%;
 }
 
 .nav__item {
@@ -393,32 +397,32 @@ h1 {
   margin: -1rem;
 }
 
-.fixed-nav .nav {
+.u-fixed-nav .nav {
   border-radius: 0 0 5rem 5rem;
   position: fixed;
   z-index: 1;
 }
 
 @media (min-width: 768px) {
-  .fixed-nav .nav {
+  .u-fixed-nav .nav {
     background: #faf4f2;
   }
 }
 
-.fixed-nav .nav__list {
+.u-fixed-nav .nav__list {
   color: #3b3735;
 }
 
-.fixed-nav .sign-list {
+.u-fixed-nav .sign-list {
   color: #3b3735;
 }
 
-.fixed-nav .sign-list__button {
+.u-fixed-nav .sign-list__button {
   color: #3b3735;
   border: 0.15rem solid #3b3735;
 }
 
-.fixed-nav .sign-list__button:hover {
+.u-fixed-nav .sign-list__button:hover {
   color: #e76f51;
   border: 0.15rem solid #e76f51;
 }
@@ -523,6 +527,13 @@ h1 {
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+  max-width: 59rem;
+}
+
+@media (min-width: 480px) {
+  .newsletter {
+    max-width: 47rem;
+  }
 }
 
 @media (min-width: 840px) {
@@ -540,19 +551,6 @@ h1 {
   background-size: contain;
   left: -40rem;
   bottom: -20rem;
-}
-
-@media (min-width: 480px) {
-  .newsletter::before {
-    flex-direction: column;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 840px) {
-  .newsletter::before {
-    flex-direction: row;
-  }
 }
 
 @media (min-width: 480px) {
@@ -708,7 +706,7 @@ h1 {
 
 .footer__wrapper {
   display: flex;
-  margin-left: 6rem;
+  margin-left: 10rem;
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
