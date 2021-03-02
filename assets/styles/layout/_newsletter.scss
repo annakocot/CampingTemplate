@@ -17,6 +17,11 @@
 
   @include media-breakpoint-up(landscapeTablet) {
     flex-direction: row;
+    max-width: 80rem;
+  }
+
+  @include media-breakpoint-up(laptop) {
+    max-width: 100rem;
   }
 
   &::before {
@@ -57,7 +62,7 @@
     @include media-breakpoint-up(landscapeTablet) {
       order: 1;
       max-width: 40rem;
-      padding-top: 10rem;
+      padding-top: 9rem;
     }
 
     @include media-breakpoint-up(laptop) {
@@ -139,7 +144,7 @@
 
     @include media-breakpoint-up(landscapeTablet) {
       width: 30rem;
-      margin: 6rem 2rem;
+      //margin: 6rem 2rem;
     }
 
     @include media-breakpoint-up(laptop) {
