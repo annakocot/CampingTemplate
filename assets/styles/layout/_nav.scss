@@ -1,38 +1,108 @@
 .nav {
-  position: fixed;
   width: 100%;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   font-size: $font-size-default;
 
   &__logo-image {
     margin: 2rem;
   }
 
+  &__hamburger {
+    margin: 2rem;
+    margin-left: auto;
+
+    @include media-breakpoint-up(laptop) {
+      display: none;
+    }
+  }
+
+  &__hamburger-icon {
+    display: block;
+    margin: .5rem;
+  }
+
   &__list {
-    display: flex;
-    flex-direction: row;
-    margin-left: 0;
-    color: $color-grey-light-1;
+    display: none;
+    flex-direction: column;
+    border-radius: 0 0 5rem 5rem;
+    padding: 2rem;
+
+    @include media-breakpoint-up(laptop) {
+      display: flex;
+      flex-direction: row;
+      margin-left: 0;
+      color: $color-grey-light-1;
+      padding: 0;
+    }
   }
 
   &__item {
     margin: 3.5rem 0 0 3rem;
 
+    &:hover {
+      color: $color-primary;
+      transform: scale(1.1);
+      transition: all .3s;
+    }
   }
 }
 
 .sign-list {
-  margin-left:auto;
-  display: flex;
-  flex-direction: row;
-  color: $color-white;
+  display: none;
+
+  @include media-breakpoint-up(portraitTablet) {
+    display: flex;
+    flex-direction: row;
+    color: $color-white;
+  }
+
+  @include media-breakpoint-up (laptop) {
+    margin-left: auto;
+  }
 
   &__item {
     margin: 3.5rem 3.5rem 0 0;
+
+    &:hover {
+      color: $color-primary;
+      transform: scale(1.1);
+      transition: all .3s;
+    }
   }
 
   &__button {
     margin: -1rem;
+  }
+}
+
+.u-fixed-nav {
+  .nav {
+    border-radius: 0 0 5rem 5rem;
+    position: fixed;
+    z-index: 1;
+
+    @include media-breakpoint-up(portraitTablet) {
+      background: $color-background;
+    }
+
+    &__list {
+      color: $color-black;
+    }
+  }
+
+  .sign-list {
+    color: $color-black;
+
+    &__button {
+      color: $color-black;
+      border: .15rem solid $color-black;
+
+      &:hover {
+        color: $color-primary;
+        border: .15rem solid $color-primary;
+      }
+    }
   }
 }

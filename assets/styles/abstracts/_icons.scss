@@ -24,6 +24,9 @@
 }
 
 .icon {
+  &--menu:before {
+    content: "\e904";
+  }
   &--paper-plane::before {
     content: "\e902";
   }

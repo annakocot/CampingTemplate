@@ -9,21 +9,57 @@
   margin-top: 12rem;
 
   &__wrapper {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+    display: flex;
+    margin-left: 10rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include media-breakpoint-up(laptop) {
+      flex-direction: row;
+      justify-content: flex-start;
+      max-height: 50rem;
+    }
+
+    @include media-breakpoint-up(desktop) {
+      margin-left: 13rem;
+    }
+
+    @include media-breakpoint-up(hdDesktop) {
+      max-width: 120rem;
+      margin: 0 auto;
+    }
   }
 
+
   &__textbox {
-    width: 36%;
+    width: 35rem;
     margin-right: 6rem;
+
+    @include media-breakpoint-up(phablet) {
+      width: 53rem;
+    }
+
+    @include media-breakpoint-up(laptop) {
+      width: 30rem;
+    }
+
+    @include media-breakpoint-up(desktop) {
+      width: 38rem;
+    }
+
+    @include media-breakpoint-up(hdDesktop) {
+      width: 50rem;
+    }
   }
 
   &__heading {
+    max-width: 30rem;
     margin-bottom: 2rem;
     font-family: $font-primary;
     font-size: $font-size-default;
     color: $color-black;
+    line-height: 1.5;
   }
 
   &__description {
@@ -31,9 +67,18 @@
     font-family: $font-secondary;
     color: $color-black;
     margin-bottom: 2rem;
+    line-height: 1.8;
   }
 
   &__badges {
+    margin-top: 7rem;
+
+    @include media-breakpoint-up(laptop) {
+      margin-top: 3rem;
+    }
+  }
+
+  &__badges-list {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -45,15 +90,29 @@
   }
 
   &__menu {
-    width: 46%;
     display: flex;
     flex-direction: row;
-
+    flex-wrap: wrap;
   }
 
   &__menu-item {
-    & + & {
-      margin-left: 4rem;
+    max-width: 16rem;
+    margin-top: 4rem;
+    margin-right: 3rem;
+
+    @include media-breakpoint-up(laptop) {
+      margin-top: 0;
+    }
+
+    &+& {
+      @include media-breakpoint-up(laptop) {
+        margin-left: 2rem;
+      }
+
+      @include media-breakpoint-up(desktop) {
+        margin-left: 4rem;
+        margin-top: 0;
+      }
     }
   }
 
@@ -64,6 +123,13 @@
   &__list-item {
     font-size: $font-size-small;
     font-family: $font-secondary;
+    line-height: 1.8;
+
+    &:hover {
+      color: $color-primary;
+      transform: scale(1.1);
+      transition: all .2s;
+    }
   }
 
   &__copyright {
@@ -71,5 +137,6 @@
     font-family: $font-secondary;
     color: $color-grey-dark;
     text-align: center;
+    margin-top: 1rem;
   }
 }
