@@ -221,17 +221,6 @@ h1 {
   background: #fff;
 }
 
-.button__icon--back-top {
-  color: #e76f51;
-  background: #fff;
-  font-size: 1.6rem;
-}
-
-.button__icon--back-top:hover {
-  color: #fff;
-  background: #e76f51;
-}
-
 .show {
   display: block;
 }
@@ -539,6 +528,13 @@ h1 {
 @media (min-width: 840px) {
   .newsletter {
     flex-direction: row;
+    max-width: 80rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .newsletter {
+    max-width: 100rem;
   }
 }
 
@@ -588,7 +584,7 @@ h1 {
   .newsletter__textbox {
     order: 1;
     max-width: 40rem;
-    padding-top: 10rem;
+    padding-top: 9rem;
   }
 }
 
@@ -682,7 +678,6 @@ h1 {
 @media (min-width: 840px) {
   .newsletter__image {
     width: 30rem;
-    margin: 6rem 2rem;
   }
 }
 
@@ -876,5 +871,13 @@ h1 {
   bottom: 10rem;
   padding: 1rem;
   border-radius: 1.5rem;
+  color: #e76f51;
+  background: #fff;
+  font-size: 1.6rem;
+}
+
+#back-top:hover {
+  color: #fff;
+  background: #e76f51;
 }
 /*# sourceMappingURL=style.css.map */

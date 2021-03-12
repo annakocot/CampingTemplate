@@ -29,4 +29,12 @@
   bottom: 10rem;
   padding: 1rem;
   border-radius: 1.5rem;
+  color: $color-primary;
+  background: $color-white;
+  font-size: $font-size-small;
+
+  &:hover {
+    color: $color-white;
+    background: $color-primary;
+  }
 }
